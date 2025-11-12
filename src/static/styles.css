@@ -158,8 +158,8 @@ footer {
 }
 
 .participants ul {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none; /* hide bullet points */
+  padding-left: 0;
   margin: 0;
   max-height: 120px;
   overflow-y: auto;
@@ -173,6 +173,28 @@ footer {
   border: 1px solid #f0f0f0;
   color: #333;
   font-size: 14px;
+}
+
+/* delete/unregister button */
+.delete-participant {
+  float: right;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.delete-participant:hover {
+  background: rgba(198, 40, 40, 0.08);
+}
+
+.participant-email {
+  display: inline-block;
+  max-width: calc(100% - 36px);
+  word-break: break-all;
 }
 
 /* Empty-state list item */
