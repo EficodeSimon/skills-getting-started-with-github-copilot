@@ -142,3 +142,67 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants list styling */
+.participants {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
+}
+
+.participants h5 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.participants ul {
+  list-style: none; /* hide bullet points */
+  padding-left: 0;
+  margin: 0;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.participant-item {
+  background: linear-gradient(180deg, #ffffff, #fbfbfb);
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  border: 1px solid #f0f0f0;
+  color: #333;
+  font-size: 14px;
+}
+
+/* delete/unregister button */
+.delete-participant {
+  float: right;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.delete-participant:hover {
+  background: rgba(198, 40, 40, 0.08);
+}
+
+.participant-email {
+  display: inline-block;
+  max-width: calc(100% - 36px);
+  word-break: break-all;
+}
+
+/* Empty-state list item */
+.participant-item.empty {
+  background: transparent;
+  border: none;
+  color: #777;
+  font-style: italic;
+  padding-left: 0;
+  margin-bottom: 0;
+}
